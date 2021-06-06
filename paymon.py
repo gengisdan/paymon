@@ -1,5 +1,8 @@
 # Paymon 1.0 #
 
+# Magical Art should yet that must not be evil or subject to contempt or scorne...
+#(Lemegeton Clavicula Salomonis, Ars Goetia)
+
 ###########
 ## SPECS ##
 ###########
@@ -231,6 +234,9 @@ def fichado(lista):
 ############
 ## PAYMON ##
 ############
+
+#Oh Thou Paimon, King most glorious, who holds powerful dominion in the Western Regions of the Heavens.
+#The Keys of Rabbi Solomon.
 
 import csv
 

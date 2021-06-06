@@ -265,4 +265,4 @@ with open("fichas-cordiam.csv", 'w+', newline='', encoding = 'Windows-1252') as 
     for dato in datos:
         salida.writerow(dato)
 
-print("CÓMO CITAR ESTE SOFTWARE: Granados, Daniel. 2021. Paymon. Versión: 1.0. Lenguaje: Python. México")
+print("CÓMO CITAR ESTE SOFTWARE: Granados, Daniel. 2021. Paymon. Versión: 1.0. Lenguaje: Python. México. https://github.com/gengisdan/paymon")

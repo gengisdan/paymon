@@ -1,0 +1,28 @@
+#Paymon
+
+Paymon 1
+Software para la recuperación automática de datos.
+
+El objetivo de este programa es recuperar fichas de manera automática desde el CORDIAM.
+El proceso se lleva a cabo a partir de elementos de búsqueda introducidos por el usuario en un diccionario que tiene la siguiente estructura:
+
+{"lema" : ["forma 1", "forma 2"]}
+
+"lema" corresponde a la forma lemática de la búsqueda, por ejemplo, "perro"
+Dentro de la lista del value, se colocan las diferentes variantes del lema que quieren buscarse, por ejemplo, "perro", "perrito", "perra"...
+
+Paymon recupera un contexto específico (10 palabras antes y después del acierto), que permite identificar rápidamente la forma en su contexto inmediato, y un contexto amplio, correspondiente al fragmento completo que presenta el corpus en su página web de resultados. La cantidad de palabras que aparecen antes y después del acierto en el contexto específico puede ser modificada por el usuario.
+
+El programa recolecta seis campos de meta información, los cuales buscan homologarse con los campos de metadatos que manejan los corpus de la RAE. Esto tiene como objetivo que los datos recuperados por Paymon puedan unirse en una sola tabla con aquellos recuperados por Amaimon.
+
+Paymon fue creado con el propósito de facilitar la tarea de recolección de datos a los lingüistas, para que puedan dedicar más tiempo al análisis. Asismimo, permite recuperar grandes cantidades de datos rápidamente.
+
+Requerimientos:
+Selenium
+Requests
+Chrome Driver
+
+La búsqueda tiene tres parámetros: anoDesde (Num), anoHasta (Num) y pais (lista).
+
+Si se quiere buscar dentro de un rango específico de tiempo, se utiliza anoDesde y anoHasta. Cuando se emplean, TIENEN que utilizarse ambos.
+El argumento pais restringe la búsqueda a uno o varios países, los cuales son ingresados como cadenas dentro de una lista.
